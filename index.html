@@ -687,7 +687,7 @@ function closeMarketingModal(agreed) {
     eventCode: CONFIG.EVENT_CODE
   };
 
-  showLoading('중복 확인 중...');
+  showLoading('참여 준비 중...');
   checkDuplicateOnServer(d.phone)
     .then(function(isDup) {
       hideLoading();
@@ -735,7 +735,7 @@ function submitForm() {
     ageGroup:ageGroup||'미선택', marketing:'동의', eventCode:CONFIG.EVENT_CODE
   };
 
-  showLoading('중복 확인 중...');
+  showLoading('참여 준비 중...');
   checkDuplicateOnServer(phone)
     .then(function(isDup) {
       hideLoading();
